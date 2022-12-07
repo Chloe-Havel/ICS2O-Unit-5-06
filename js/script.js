@@ -19,12 +19,16 @@ if (navigator.serviceWorker) {
  * This function displays an alert.
  */
 function myButtonClicked() {
-  document.getElementById("hello-world").innerHTML = "<p>Hello, World!</p>"
-}
+  let counter = 0
+  let answer = 0
 
-let counter = "0"
-let answer = 0
-while (counter < second) {
-  answer += "<br>The number is " + counter
-  answer++
+  const firstNumber = parseInt(document.getElementById("first").value)
+  const secondNumber = parseInt(document.getElementById("second").value)
+
+  while (counter < secondNumber) {
+    answer = firstNumber + answer
+    counter++;
+  }
+    // output
+    document.getElementById("answer").innerHTML = firstNumber + " x " + secondNumber + " = " + answer
 }
