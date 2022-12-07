@@ -21,3 +21,10 @@ if (navigator.serviceWorker) {
 function myButtonClicked() {
   document.getElementById("hello-world").innerHTML = "<p>Hello, World!</p>"
 }
+
+let counter = "0"
+let answer = 0
+while (counter < second) {
+  answer += "<br>The number is " + counter
+  i++;
+}
