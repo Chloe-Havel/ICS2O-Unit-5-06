@@ -27,8 +27,9 @@ function myButtonClicked() {
 
   while (counter < secondNumber) {
     answer = firstNumber + answer
-    counter++;
+    counter++
   }
-    // output
-    document.getElementById("answer").innerHTML = firstNumber + " x " + secondNumber + " = " + answer
+  // output
+  document.getElementById("answer").innerHTML =
+    firstNumber + " x " + secondNumber + " = " + answer
 }
