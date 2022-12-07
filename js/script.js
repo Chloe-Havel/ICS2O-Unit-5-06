@@ -26,5 +26,5 @@ let counter = "0"
 let answer = 0
 while (counter < second) {
   answer += "<br>The number is " + counter
-  i++
+  answer++;
 }
